@@ -97,7 +97,7 @@
     <h3 id="Introduction">Introduction</h3>
   </p>
   
-<p class="ex1">
+<p class="ex1" id= "Introduction_InText">
   <p>
     I am wrting random text so I can test out whether I am doing this properly or not. I am trying to think of more things so I can make this piece of writing longer...
     text text text text the brown fox jumps over the lazy dog text text text, from my random testing it seems that if I dont make each line myself then the text will
@@ -107,20 +107,20 @@
   
 <hr>
   <p>
-    <h3 id="Environmental Importance">Environmental Importance</h3>
+    <h3 id="Environmental_Importance">Environmental Importance</h3>
   </p>
   
-<p class="ex1">
+<p class="ex1" id= "EnvironmentalImportance_InText">
   <p>
     Paragraph on the environmental importance of power efficient hardware
   </p>
 
 <hr>
   <p>
-    <h3 id="Practical Usefulness">Practical Usefulness</h3>
+    <h3 id="Practical_Usefulness">Practical Usefulness</h3>
   </p>
   
-<p class="ex1">
+<p class="ex1" id="PracticalUsefulness_InText">
   <p>
     Paragraph on the practicality benefits of power efficient hardware
   </p>
@@ -130,7 +130,7 @@
     <h3 id="Reliability+Stability">Reliability & Stability</h3>
   </p>
   
-<p class="ex1">
+<p class="ex1" id="ReliabilityStability_InText">
   <p>
     Paragraph on reliability/ stability benefits of power efficient hardware 
   </p>
@@ -140,7 +140,7 @@
     <h3 id="Conclusion">Conclusion</h3>
   </p>
   
-<p class="ex1">
+<p class="ex1" id= "Conclusion_InText">
   <p>
     To conclude, i am gay
   </p>
@@ -228,9 +228,12 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
+    const Paragraph1Count = displayWordCount("EnvironmentalImportance_InText");
+    const Paragraph2Count = displayWordCount("PracticalUsefulness_InText");
+    const Paragraph3Count = displayWordCount("ReliabilityStability_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + Paragraph1Count + Paragraph2Count + Paragraph3Count + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
