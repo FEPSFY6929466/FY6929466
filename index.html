@@ -3,7 +3,7 @@
 <html>
 
   <head>
-  <img src ="UoS logo.png" alt ="Banner" width="1200" height="300">
+  <img src ="UoS logo.png" alt ="Banner" class="logo">
     <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
     <h2>Student URN: 6929466</h2>
     <hr>
@@ -35,6 +35,7 @@
        </style>
 
       <style>
+        
     p.ex1 {
       width: 90%;
       margin: 0 auto;
@@ -44,6 +45,12 @@
     h1, h2 {
       text-align: center;
       }
+
+        .logo {
+          display: block;  /* surry logo behaves like a block element */
+          margin: 0 auto;  /* centres horizontally */
+          max-width: 50%; /* scale to fit device wdith, just like text etc */
+          height: auto;    /* keeps aspect ratio */
       </style>
       
   </head>
@@ -247,7 +254,7 @@
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + Paragraph1Count + Paragraph2Count + Paragraph3Count + ConclusionCount;
     // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    document.getElementById("totalWordCount").innerText = `Total word count (excluding abstract & references): ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
