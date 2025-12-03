@@ -50,10 +50,10 @@
         }
 
         body {
-          background: linear-gradient(to bottom, #ffffff 0%, #e0f0ff 30%, #000080 200%); /* gradient background */
-          margin-left: 50px; /* shifts all page content 50px to right */
+          background: linear-gradient(to right, #ffffff 0%, #e0f0ff 10%, #000080 150%); /* gradient background */
+          margin-left: 50px; /* meant to shift all page content 50px but doesn't work because other content is already centred by margin: 0 */
         }
-          
+          /* images, h1, h2 and ex1 are already centred automatically however h3 isn't and i don't want <hr> to run from border to border so added code on line 66 */
       </style>
       
   </head>
@@ -62,8 +62,8 @@
   <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
     .mySlides {display:none;}
-  </style>
-<body style="margin-left:50px;">
+  </style> 
+<body style="margin-left:50px;margin-right:50px">   
 <body>
 
   <img src ="UoS logo.png" alt ="Banner" class="logo">
