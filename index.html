@@ -32,13 +32,13 @@
 
       <style>
         
-        p.ex1 {
+        p.ex1 {          /* auto-scaling for images and videos */
           width: 90%;
           margin: 0 auto;
           text-align: justify;
           }
 
-        h1, h2 {
+        h1, h2 { 
          text-align: center;
          }
 
@@ -54,6 +54,12 @@
           margin-left: 50px; /* meant to shift all page content 50px but doesn't work because other content is already centred by margin: 0 */
         }
           /* images, h1, h2 and ex1 are already centred automatically however h3 isn't and i don't want <hr> to run from border to border so added code on line 66 */
+
+        .ex1:target {            /* when a reference is clicked on, it will be highlighted */
+          background-color: #ffffcc;   /* pale yellow */
+          border-left: 4px solid #000080; /* navy accent bar */
+          padding-left: 6px;
+        }
       </style>
       
   </head>
